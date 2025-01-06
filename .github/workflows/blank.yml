@@ -28,8 +28,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Git git diff
         run: |
-          - echo "获取已修改文件的列表..."
-          - MODIFIED_FILES=$(git diff $CI_COMMIT_BEFORE_SHA $CI_COMMIT_SHA)
-          - echo "$MODIFIED_FILES"
-          - echo "MODIFIED_FILES=$MODIFIED_FILES" >> variables.env
-          - cat variables.env
+          echo "获取已修改文件的列表..."
+          MODIFIED_FILES=$(git diff $CI_COMMIT_BEFORE_SHA $CI_COMMIT_SHA)
+          echo "$MODIFIED_FILES"
+          echo "MODIFIED_FILES=$MODIFIED_FILES" >> variables.env
+          cat variables.env
