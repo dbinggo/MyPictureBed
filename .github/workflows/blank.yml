@@ -28,5 +28,6 @@ jobs:
           CURRENT_COMMIT=$GITHUB_SHA
           # 获取差异
           MODIFIED_FILES=$(git diff  $PREVIOUS_COMMIT $CURRENT_COMMIT)
-          echo "$MODIFIED_FILES"
-          echo "MODIFIED_FILES=$MODIFIED_FILES" >> $GITHUB_ENV
+
+          echo "获得的差异为：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：：："
+          echo MODIFIED_FILES
